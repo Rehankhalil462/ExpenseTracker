@@ -4,9 +4,9 @@ export const theme = {
   ...DefaultTheme,
   colors: {
     ...DefaultTheme.colors,
-    primary: "tomato",
-    secondary: "yellow",
-    background: "#E9EEEF",
+    // primary: "tomato",
+    // secondary: "yellow",
+    // background: "#E9EEEF",
     fabBackgroundColor: "#FD9062",
   },
 };

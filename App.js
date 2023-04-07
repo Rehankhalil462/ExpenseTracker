@@ -17,8 +17,8 @@ export default function App() {
     <NavigationContainer>
       <PaperProvider theme={theme}>
         <Stack.Navigator>
-          <Stack.Screen name="login" component={LoginScreen} />
           <Stack.Group screenOptions={{ headerShown: false }}>
+            <Stack.Screen name="login" component={LoginScreen} />
             <Stack.Screen name="home">
               {(props) => <HomeScreen {...props} />}
             </Stack.Screen>
@@ -30,21 +30,3 @@ export default function App() {
     </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  fab: {
-    position: "absolute",
-    marginRight: 20,
-    marginBottom: 30,
-    borderRadius: 50,
-    backgroundColor: "#FD9062",
-    right: 0,
-    bottom: 0,
-  },
-});
